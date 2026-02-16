@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Week 5 Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Event Handler Lab</h2>
+
+    <form id="labForm">
+        <label for="courseSelect">Choose a Course:</label>
+        <select id="courseSelect">
+            <option value="">-- Select --</option>
+            <option value="web">Web Development</option>
+            <option value="mobile">Mobile Development</option>
+            <option value="database">Database</option>
+        </select>
+
+        <br><br>
+
+        <div id="extraOption" class="hidden">
+            <input type="checkbox" id="newsletter">
+            <label for="newsletter">Subscribe to Web Dev Newsletter</label>
+        </div>
+
+        <br>
+
+        <label for="nameInput">Enter Your Name:</label>
+        <input type="text" id="nameInput">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
