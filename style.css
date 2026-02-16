@@ -1,0 +1,10 @@
+/* This class hides the checkbox until it is needed */
+.hidden {
+    display: none;
+}
+
+/* Optional: Adding some padding for better looks */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
