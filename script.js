@@ -1,30 +1,27 @@
-// Get reference to select element
+// Get reference to the select dropdown
 const courseSelect = document.getElementById("courseSelect");
 
-// Get reference to hidden checkbox container
+// Get reference to the checkbox container
 const extraOption = document.getElementById("extraOption");
 
-// Add event listener for change event
-courseSelect.addEventListener("change", function () {
-
-    // If Web Development is selected
+// Event handler for dropdown change
+courseSelect.addEventListener("change", function() {
+    // If "Web Development" is selected, show the hidden div
     if (courseSelect.value === "web") {
         extraOption.classList.remove("hidden");
     } else {
+        // Otherwise, keep it hidden
         extraOption.classList.add("hidden");
     }
-
 });
 
+// Get reference to the text input using querySelector
+const nameInput = document.querySelector("#nameInput");
 
-// Get reference to text input
-const nameInput = document.getElementById("nameInput");
-
-// Add keydown event listener
-nameInput.addEventListener("keydown", function (event) {
-
+// Add keydown event handler
+nameInput.addEventListener("keydown", function(event) {
+    // Check if the key pressed is "Enter"
     if (event.key === "Enter") {
-        alert("Enter key was pressed!");
+        alert("the enter key was pressed");
     }
-
 });
