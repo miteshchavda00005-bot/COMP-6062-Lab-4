@@ -25,3 +25,4 @@ nameInput.addEventListener("keydown", function(event) {
         alert("the enter key was pressed");
     }
 });
+
